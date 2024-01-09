@@ -4,86 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Domain Investor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            background-image: linear-gradient(45deg, rgba(255,0,0,0.2) 25%, transparent 25%, transparent 50%, rgba(255,0,0,0.2) 50%, rgba(255,0,0,0.2) 75%, transparent 75%, transparent);
-            background-size: 60px 60px;
+            background: linear-gradient(to bottom right, #009fd4, #2aebf4, #30d5c8, #ffffff);
+            color: #333;
+            line-height: 1.6;
+            position: relative;
+            overflow: auto;
         }
 
-        header, section, footer {
-            margin: 10px;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
+        header {
+            background: #0056b3;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #ffffff 3px solid;
         }
 
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        nav ul li a {
+        header a, .button {
+            color: #ffffff;
             text-decoration: none;
-            color: #333;
+            text-transform: uppercase;
+            font-size: 16px;
         }
 
-        h1, h2 {
-            color: #333;
+        header ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        header li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header .current a {
+            color: #e9ff70;
+            font-weight: bold;
+        }
+
+        header a:hover, .button:hover {
+            color: #e9ff70;
+        }
+
+        .button {
+            background-color: #0056b3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #003d7a;
+        }
+
+        section {
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #0056b3;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Smart Domain Investor</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Smart Domain Investor</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#careers" class="button">Careers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to Smart Domain Investor, where we specialize in identifying and providing high-value, undervalued domain names. Our team, with years of experience in the domain market, uses a sophisticated algorithm to uncover hidden gems that offer significant investment opportunities.</p>
-    </section>
+    <div class="container">
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Welcome to Smart Domain Investor, where we specialize in identifying and providing high-value, undervalued domain names. Our team, with years of experience in the domain market, uses a sophisticated algorithm to uncover hidden gems that offer significant investment opportunities.</p>
+        </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>At Smart Domain Investor, we offer a range of services to help you capitalize on the domain market. From exclusive domain investment opportunities to personalized consultation services, we are here to guide you in building a profitable domain portfolio. Explore our latest domain listings and discover the potential for growth and innovation.</p>
-    </section>
+        <!-- Our Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>At Smart Domain Investor, we offer a range of services to help you capitalize on the domain market. From exclusive domain investment opportunities to personalized consultation services, we are here to guide you in building a profitable domain portfolio. Explore our latest domain listings and discover the potential for growth and innovation.</p>
+        </section>
 
-    <section id="blog">
-        <h2>Blog</h2>
-        <p>Stay informed with our blog featuring the latest trends, insights, and tips in domain investing. Whether you're a seasoned investor or new to the domain market, our blog is a valuable resource for staying ahead in this dynamic field. Read our latest articles on market analysis, investment strategies, and success stories.</p>
-    </section>
+        <!-- FAQ Section -->
+        <section id="faq">
+            <h2>FAQ</h2>
+            <p>Have questions about domain investing? Our FAQ section provides answers to common queries, offering clarity on everything from the basics of domain investment to the specifics of our services. Learn more about how to get started, what makes a domain valuable, and how we can help you succeed in the domain market.</p>
+        </section>
 
-    <section id="faq">
-        <h2>FAQ</h2>
-        <p>Have questions about domain investing? Our FAQ section provides answers to common queries, offering clarity on everything from the basics of domain investment to the specifics of our services. Learn more about how to get started, what makes a domain valuable, and how we can help you succeed in the domain market.</p>
-    </section>
+        <!-- Careers Section -->
+        <section id="careers">
+            <h2>Careers at Smart Domain Investor</h2>
+            <p>Join our innovative team at Smart Domain Investor and be a part of a pioneering force in the domain investment industry. We are currently seeking talented and experienced <strong>Senior Data Analysts</strong> to expand our capabilities and drive our algorithm to new heights.</p>
+            <p>This is a remote position, offering the flexibility to work from anywhere. We value the balance between work and personal life and believe in empowering our team members with the freedom to work in a way that suits them best.</p>
+            <p>If you are passionate about data analysis and eager to make a significant impact in a dynamic industry, we would love to hear from you. Please send your resume and a cover letter to careers@smartdomaininvestor.com.</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Interested in learning more about our services or have a specific inquiry? Contact us today! Fill out our contact form or reach out via email or phone. Our team is ready to assist you with your domain investment needs and answer any questions you may have.</p>
-    </section>
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Interested in learning more about our services or have a specific inquiry? Contact us today! Fill out our contact form or reach out via email or phone. Our team is ready to assist you with your domain investment needs and answer any questions you may have.</p>
+            <p>Email: contact@smartdomaininvestor.com | Phone: 123-456-7890</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2023 Smart Domain Investor</p>
-        <p><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
     </footer>
 </body>
 </html>
