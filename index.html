@@ -22,9 +22,20 @@
             margin: auto;
             overflow: hidden;
         }
-  		#logo {
-            height: 60px;
-            width: auto;
+  		.header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #logo {
+            height: 80px; /* Adjust as needed */
+            width: auto; /* Maintains aspect ratio */
+        }
+
+        .header-text {
+            font-size: 24px; /* Adjust as needed */
+            color: #ffffff; /* Example color */
             /* Additional styling */
         }
         header {
@@ -97,8 +108,8 @@
 <body>
     <header>
         <div class="container">
-			<img src="logo.png" alt="Smart Domain Investor Logo" id="logo">
             <h1>Smart Domain Investor</h1>
+			<img src="logo.png" alt="Smart Domain Investor Logo" id="logo">
             <nav>
                 <ul>
                     <li><a href="#about">About Us</a></li>
